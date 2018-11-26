@@ -11,5 +11,15 @@
 
     <artifactId>app-updater-service</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.tellyouwhat</groupId>
+            <artifactId>app-updater-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.tellyouwhat</groupId>
+            <artifactId>app-updater-repo</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

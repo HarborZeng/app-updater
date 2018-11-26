@@ -12,6 +12,7 @@
         <module>app-updater-domain</module>
         <module>app-updater-common</module>
         <module>app-updater-service</module>
+        <module>app-updater-repo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -32,6 +33,36 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-dao</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.tellyouwhat</groupId>
+                <artifactId>app-updater-repo</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
             <dependency>
                 <groupId>commons-io</groupId>

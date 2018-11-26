@@ -1,15 +1,15 @@
 package cn.tellyouwhat.appupdater.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import cn.tellyouwhat.appupdater.domain.App;
+import cn.tellyouwhat.appupdater.domain.vo.UpdateRequestVo;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/detect")
 public class DetectController {
 
-    @GetMapping("test")
-    public String test() {
-        return "Hello updater";
+    @PostMapping("/{appName}")
+    public App test(@PathVariable String appName, @RequestBody UpdateRequestVo updateRequest) {
+        return null;
     }
 }

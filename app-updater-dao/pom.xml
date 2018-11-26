@@ -11,5 +11,11 @@
 
     <artifactId>app-updater-dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.tellyouwhat</groupId>
+            <artifactId>app-updater-domain</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
